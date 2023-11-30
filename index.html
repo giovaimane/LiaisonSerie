@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LIAISON SERIE: Page principale</title>
+<title>LIAISON SERIE: Documentation</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -89,10 +89,56 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">LIAISON SERIE Documentation</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">Documentation </div></div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><h1><a class="anchor" id="intro_sec"></a>
+Introduction</h1>
+<p>La liaison série est un protocole de communication permettant l'échange de données entre deux dispositifs électroniques. Voici quelques points la décrivant :</p>
+<pre class="fragment">- Protocoles Courants : Deux types de liaisons série sont utilisés : la liaison série synchrone, comme I2C, et la liaison série asynchrone.
+
+- Caractéristiques de la Liaison Asynchrone : Absence d'un signal d'horloge partagé ; chaque dispositif a son propre horloge à configurer.
+
+- Début de Communication : La transmission commence par un bit de start, facilitant la synchronisation.
+
+- USART : Les microcontrôleurs utilisent l'USART (Universal Synchronous and Asynchronous serial Receiver and Transmitter) pour gérer la communication série.
+
+- Configuration de la Vitesse : La vitesse de communication (baud rate) est cruciale ; elle est définie par la fréquence du quartz et le registre de configuration.
+
+- Format de Trame : Les données sont encodées avec un bit de start, des bits de données (généralement 8 bits), des bits de parité ou d'imparité, et 1 ou 2 bits de stop.
+
+- Transmission Asynchrone : La sortie est généralement à l'état haut en l'absence de communication, facilitant la détection des erreurs.
+
+- USART en Action : Le schéma d'un microcontrôleur AVR avec les broches Rx et Tx montre comment l'USART gère la réception et la transmission.
+
+- Configuration des Registres : Les registres de configuration, tels que UBRR0, sont utilisés pour ajuster la vitesse et d'autres paramètres.
+
+- Communication Continue : La communication série est établie en continu, avec des fonctions dédiées pour transmettre et recevoir des données.
+</pre> <h1><a class="anchor" id="install_sec"></a>
+Installation</h1>
+<h2><a class="anchor" id="tools_subsec"></a>
+Matériels</h2>
+<ul>
+<li>Arduino Uno</li>
+<li>Câble de connexion Type B</li>
+</ul>
+<h2><a class="anchor" id="Logiciels"></a>
+Logiciels</h2>
+<ul>
+<li>Arduino IDE</li>
+<li>QTCreator</li>
+<li>Git Bash</li>
+<li>Git GUI</li>
+<li>Site internet Git Hub</li>
+</ul>
+<h1><a class="anchor" id="copyright"></a>
+Copyright and License</h1>
+<p>Copyright (c) 2023 Aïmane ZELLOUFI. Tous droits réservés</p>
+<p><br  />
+<br  />
+ </p>
+</div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
