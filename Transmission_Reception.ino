@@ -127,7 +127,7 @@ int main(void) {
 
    _delay_ms(1);
 
-    // Votre code principal ici (vous pouvez le laisser vide si vous testez la communication série)
+    
   }
 }
 
